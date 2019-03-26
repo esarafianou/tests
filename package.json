@@ -1,0 +1,21 @@
+{
+  "name": "docker-check-node",
+  "version": "0.0.1",
+  "description": "docker image checking the security status of an Auth0 service",
+  "main": "checkNode.js",
+  "repository": {
+  "type": "git",
+  "url": "git://github.com/auth0/docker-check-node.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "semver": "^5.6.0",
+    "tar": "^4.4.8"
+  }
+}
