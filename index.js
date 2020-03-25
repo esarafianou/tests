@@ -2,7 +2,7 @@ function something() {
 }
 
 
-function validate(a, c) {
+function validate1(a, c) {
     let foo = a.b
     if (!foo || something()) {
         throw 'error';
