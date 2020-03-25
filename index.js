@@ -1,18 +1,39 @@
-function something() {
+function somethingTrue() {
+  return true
 }
 
-function validate1(a, c) {
-    let foo = a.b
-    if (!foo || something()) {
-        throw 'error';
-    }
-    c(1)
+function somethingFalse() {
+  return false
+}
+
+function validate1true(a, c) {
+  let foo = a.b
+  if (!foo || somethingTrue()) {
+    throw Error('error')
+  }
+  c(1)
+}
+
+function validate1false(a, c) {
+  let foo = a.b
+  if (!foo || somethingFalse()) {
+    throw Error('error')
+  }
+  c(1)
 }
 
 
 function validate2(a, c) {
   let foo = a.b
-  if (foo && something()) {
+  if (foo && somethingTrue()) {
+    throw Error('error')
+  }
+  c(1)
+}
+
+function validate2false(a, c) {
+  let foo = a.b
+  if (foo && somethingFalse()) {
     throw Error('error')
   }
   c(1)
