@@ -23,7 +23,7 @@ function validate1false(a, c) {
 }
 
 
-function validate2(a, c) {
+function validate2true(a, c) {
   let foo = a.b
   if (foo && somethingTrue()) {
     throw Error('error')
